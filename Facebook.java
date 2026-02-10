@@ -1,0 +1,13 @@
+class Facebook {
+
+    static void createAccount(String firstName, String lastName, String email, String password) {
+        System.out.println(firstName);
+        System.out.println(lastName);
+        System.out.println(email);
+        System.out.println(password);
+    }
+
+    public static void main(String[] args) {
+        createAccount("Rahul", "Sharma", "rahul@gmail.com", "Rahul@123");
+    }
+}
