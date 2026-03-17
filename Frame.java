@@ -6,6 +6,19 @@ class Frame {
     String material;
     String color;
     double price;
+	
+	public Frame() {}
+
+    public Frame(int frameId, String frameName, String material, String color, double price) {
+        this.frameId = frameId;
+        this.frameName = frameName;
+        this.material = material;
+        this.color = color;
+        this.price = price;
+    }
+
+
+
 
     public void getFrameDetails(){
 

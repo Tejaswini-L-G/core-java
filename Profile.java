@@ -6,6 +6,17 @@ class Profile {
     String designation;
     String company;
     int experienceYears;
+	
+	public Profile() {}
+
+    public Profile(int profileId, String name, String designation, String company, int experienceYears) {
+        this.profileId = profileId;
+        this.name = name;
+        this.designation = designation;
+        this.company = company;
+        this.experienceYears = experienceYears;
+    }
+
 
     public void getProfileDetails(){
 

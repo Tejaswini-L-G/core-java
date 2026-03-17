@@ -6,6 +6,16 @@ class Service {
     double price;
     int durationMinutes;
     String specialist;
+	
+	public Service() {}
+
+    public Service(int serviceId, String serviceName, double price, int durationMinutes, String specialist) {
+        this.serviceId = serviceId;
+        this.serviceName = serviceName;
+        this.price = price;
+        this.durationMinutes = durationMinutes;
+        this.specialist = specialist;
+    }
 
     public void getServiceDetails(){
 

@@ -1,6 +1,10 @@
 class LinkedInRunner {
 
     public static void main(String[] args) {
+		
+		Profile p = new Profile(1, "Sundar Pichai", "CEO", "Google", 20);
+        LinkedIn l = new LinkedIn(101, "LinkedIn", "California", 2003, "Reid Hoffman", p);
+        l.getLinkedInDetails();
 
         LinkedIn linkedIn1 = new LinkedIn();
         Profile profile1 = new Profile();

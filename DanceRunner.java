@@ -1,6 +1,10 @@
 class DanceRunner {
 
     public static void main(String[] args) {
+		
+		 Form f = new Form(1, "Bharatanatyam", "Tamil Nadu", "Classical", 4);
+        Dance d = new Dance(101, "Dance Academy", "India", 1990, "Guru", f);
+        d.getDanceDetails();
 
         Dance dance1 = new Dance();
         Form form1 = new Form();

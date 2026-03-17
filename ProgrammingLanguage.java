@@ -8,6 +8,18 @@ class ProgrammingLanguage {
     String paradigm;
 
     Syntax syntax;
+	
+	 public ProgrammingLanguage() {}
+
+    public ProgrammingLanguage(int languageId, String languageName, String creator, int releaseYear, String paradigm, Syntax syntax) {
+        this.languageId = languageId;
+        this.languageName = languageName;
+        this.creator = creator;
+        this.releaseYear = releaseYear;
+        this.paradigm = paradigm;
+        this.syntax = syntax;
+    }
+
 
     public void getProgrammingLanguageDetails(){
 

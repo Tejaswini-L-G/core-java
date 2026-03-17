@@ -1,6 +1,10 @@
 class NewsPaperRunner {
 
     public static void main(String[] args) {
+		
+		 Article a = new Article(1, "AI Revolution", "Tech", "John", 1200);
+        NewsPaper n = new NewsPaper(101, "Global Times", "USA", 1920, "Michael", a);
+        n.getNewsPaperDetails();
 
         NewsPaper paper1 = new NewsPaper();
         Article article1 = new Article();

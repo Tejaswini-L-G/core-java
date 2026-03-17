@@ -6,6 +6,16 @@ class Casino {
     String gameType;
     int maxPlayers;
     String popularity;
+	
+	  public Casino() {}
+
+    public Casino(int tableId, String gameName, String gameType, int maxPlayers, String popularity) {
+        this.tableId = tableId;
+        this.gameName = gameName;
+        this.gameType = gameType;
+        this.maxPlayers = maxPlayers;
+        this.popularity = popularity;
+    }
 
     public void getCasinoDetails(){
 

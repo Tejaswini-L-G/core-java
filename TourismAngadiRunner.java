@@ -1,6 +1,10 @@
 class TourismAngadiRunner {
 
     public static void main(String[] args) {
+		
+		 Package p = new Package(1, "Goa", 3, 8000, "Bus");
+        TourismAngadi t = new TourismAngadi(101, "TourismAngadi", "Bangalore", 2018, "Team", p);
+        t.getTourismDetails();
 
         TourismAngadi tourism1 = new TourismAngadi();
         Package package1 = new Package();

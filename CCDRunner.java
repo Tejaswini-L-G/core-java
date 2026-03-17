@@ -1,6 +1,10 @@
 class CCDRunner {
 
     public static void main(String[] args) {
+		
+		 Coffee c = new Coffee(1, "Cappuccino", "Arabica", 180, "Medium");
+        CCD cafe = new CCD(101, "CCD", "Bangalore", 1996, "Siddhartha", c);
+        cafe.getCafeDetails();
 
         CCD cafe1 = new CCD();
         Coffee coffee1 = new Coffee();

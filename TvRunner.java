@@ -1,6 +1,10 @@
 class TvRunner {
 
     public static void main(String[] args) {
+		
+		 Channel ch = new Channel(1, "Star Sports", "Sports", "English", "India");
+        Tv tv = new Tv(101, "Samsung", "Smart", 55, "4K", ch);
+        tv.getTvDetails();
 
         Tv tv1 = new Tv();
         Channel channel1 = new Channel();

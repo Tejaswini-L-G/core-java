@@ -6,6 +6,16 @@ class LazyPool {
     String waterType;
     int depth;
     String attraction;
+	
+	 public LazyPool() {}
+
+    public LazyPool(int poolId, String poolName, String waterType, int depth, String attraction) {
+        this.poolId = poolId;
+        this.poolName = poolName;
+        this.waterType = waterType;
+        this.depth = depth;
+        this.attraction = attraction;
+    }
 
     public void getLazyPoolDetails(){
 

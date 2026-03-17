@@ -1,6 +1,21 @@
 class TrainRunner {
 
     public static void main(String[] args) {
+		
+		
+		Boggy boggy = new Boggy(101, "Sleeper", 72, "Blue", "AC");
+
+        Train train = new Train(
+                1,
+                "Shatabdi Express",
+                "Bangalore",
+                "Mysore",
+                18,
+                boggy
+        );
+
+        train.getTrainDetails();
+
 
         Train train1 = new Train();
         Boggy boggy1 = new Boggy();

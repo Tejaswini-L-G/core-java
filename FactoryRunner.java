@@ -1,6 +1,10 @@
 class FactoryRunner {
 
     public static void main(String[] args) {
+		
+		 Machine m = new Machine(1, "CNC Machine", "Cutting", "Siemens", 500);
+        Factory f = new Factory(101, "ABC Factory", "Pune", 2005, "Manufacturing", m);
+        f.getFactoryDetails();
 
         Factory factory1 = new Factory();
         Machine machine1 = new Machine();

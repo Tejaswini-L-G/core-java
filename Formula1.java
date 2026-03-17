@@ -8,6 +8,17 @@ class Formula1 {
     String finalRaceCity;
 
     Franchise franchise;
+	
+	 public Formula1() {}
+
+    public Formula1(int championshipYear, String organizer, int totalTeams, String titleSponsor, String finalRaceCity, Franchise franchise) {
+        this.championshipYear = championshipYear;
+        this.organizer = organizer;
+        this.totalTeams = totalTeams;
+        this.titleSponsor = titleSponsor;
+        this.finalRaceCity = finalRaceCity;
+        this.franchise = franchise;
+    }
 
     public void getFormula1Details(){
 

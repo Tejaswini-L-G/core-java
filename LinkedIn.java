@@ -8,6 +8,17 @@ class LinkedIn {
     String founder;
 
     Profile profile;
+	
+	 public LinkedIn() {}
+
+    public LinkedIn(int platformId, String company, String headquarters, int foundedYear, String founder, Profile profile) {
+        this.platformId = platformId;
+        this.company = company;
+        this.headquarters = headquarters;
+        this.foundedYear = foundedYear;
+        this.founder = founder;
+        this.profile = profile;
+    }
 
     public void getLinkedInDetails(){
 

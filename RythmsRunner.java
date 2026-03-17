@@ -1,6 +1,10 @@
 class RythmsRunner {
 
     public static void main(String[] args) {
+		
+		MusicInstrument inst = new MusicInstrument(1, "Guitar", "String", "Spain", 1);
+        Rythms event = new Rythms(101, "Music Fest", "Mumbai", 500, "Council", inst);
+        event.getRythmsDetails();
 
         Rythms event1 = new Rythms();
         MusicInstrument instrument1 = new MusicInstrument();

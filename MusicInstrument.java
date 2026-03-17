@@ -6,6 +6,17 @@ class MusicInstrument {
     String type;
     String origin;
     int popularityRank;
+	
+	 public MusicInstrument() {}
+
+    public MusicInstrument(int instrumentId, String instrumentName, String type, String origin, int popularityRank) {
+        this.instrumentId = instrumentId;
+        this.instrumentName = instrumentName;
+        this.type = type;
+        this.origin = origin;
+        this.popularityRank = popularityRank;
+    }
+
 
     public void getInstrumentDetails(){
 

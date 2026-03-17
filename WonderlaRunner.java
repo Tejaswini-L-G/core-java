@@ -1,6 +1,10 @@
 class WonderlaRunner {
 
     public static void main(String[] args) {
+		
+		LazyPool pool = new LazyPool(1, "Wave Pool", "Fresh", 5, "Relax Ride");
+        Wonderla park = new Wonderla(101, "Wonderla Park", "Bangalore", 60, "2005", pool);
+        park.getWonderlaDetails();
 
         Wonderla park1 = new Wonderla();
         LazyPool pool1 = new LazyPool();

@@ -1,6 +1,10 @@
 class VVPuramRunner {
 
     public static void main(String[] args) {
+		
+		FoodStreet f = new FoodStreet(1, "Pani Puri", "Street", 40, "High");
+        VVPuram v = new VVPuram(101, "VV Puram", "Bangalore", 1998, "Food Street", f);
+        v.getStreetDetails();
 
         VVPuram street1 = new VVPuram();
         FoodStreet stall1 = new FoodStreet();

@@ -6,6 +6,16 @@ class Diamond {
     String originCountry;
     double carat;
     String color;
+	
+	public Diamond() {}
+
+    public Diamond(int diamondId, String diamondName, String originCountry, double carat, String color) {
+        this.diamondId = diamondId;
+        this.diamondName = diamondName;
+        this.originCountry = originCountry;
+        this.carat = carat;
+        this.color = color;
+    }
 
     public void getDiamondDetails(){
 

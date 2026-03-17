@@ -6,6 +6,16 @@ class Element {
     String symbol;
     String type;
     double atomicWeight;
+	
+	 public Element() {}
+
+    public Element(int atomicNumber, String elementName, String symbol, String type, double atomicWeight) {
+        this.atomicNumber = atomicNumber;
+        this.elementName = elementName;
+        this.symbol = symbol;
+        this.type = type;
+        this.atomicWeight = atomicWeight;
+    }
 
     public void getElementDetails(){
 

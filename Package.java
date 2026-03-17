@@ -6,6 +6,16 @@ class Package {
     int days;
     double price;
     String transport;
+	
+	  public Package() {}
+
+    public Package(int packageId, String destination, int days, double price, String transport) {
+        this.packageId = packageId;
+        this.destination = destination;
+        this.days = days;
+        this.price = price;
+        this.transport = transport;
+    }
 
     public void getPackageDetails(){
 

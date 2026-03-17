@@ -1,6 +1,10 @@
 class GrowwRunner {
 
     public static void main(String[] args) {
+		
+		 Stock s = new Stock(1, "TCS", "IT", 3500.50, "NSE");
+        Groww g = new Groww(101, "Groww", "Bangalore", 2016, "Lalit", s);
+        g.getGrowwDetails();
 
         Groww groww1 = new Groww();
         Stock stock1 = new Stock();

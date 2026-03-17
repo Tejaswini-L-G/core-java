@@ -8,6 +8,17 @@ class TourismAngadi {
     String founder;
 
     Package pkg;
+	
+	 public TourismAngadi() {}
+
+    public TourismAngadi(int platformId, String companyName, String headquarters, int foundedYear, String founder, Package pkg) {
+        this.platformId = platformId;
+        this.companyName = companyName;
+        this.headquarters = headquarters;
+        this.foundedYear = foundedYear;
+        this.founder = founder;
+        this.pkg = pkg;
+    }
 
     public void getTourismDetails(){
 

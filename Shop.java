@@ -6,6 +6,17 @@ class Shop {
     String category;
     int employees;
     String brand;
+	
+	
+	 public Shop() {}
+
+    public Shop(int shopId, String shopName, String category, int employees, String brand) {
+        this.shopId = shopId;
+        this.shopName = shopName;
+        this.category = category;
+        this.employees = employees;
+        this.brand = brand;
+    }
 
     public void getShopDetails(){
 

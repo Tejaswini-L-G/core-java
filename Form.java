@@ -6,6 +6,16 @@ class Form {
     String originState;
     String style;
     int performers;
+	
+	public Form() {}
+
+    public Form(int formId, String formName, String originState, String style, int performers) {
+        this.formId = formId;
+        this.formName = formName;
+        this.originState = originState;
+        this.style = style;
+        this.performers = performers;
+    }
 
     public void getFormDetails(){
 

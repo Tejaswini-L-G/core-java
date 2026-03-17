@@ -8,6 +8,18 @@ class Groww {
     String founder;
 
     Stock stock;
+	
+	public Groww() {}
+
+    public Groww(int appId, String company, String headquarters, int foundedYear, String founder, Stock stock) {
+        this.appId = appId;
+        this.company = company;
+        this.headquarters = headquarters;
+        this.foundedYear = foundedYear;
+        this.founder = founder;
+        this.stock = stock;
+    }
+
 
     public void getGrowwDetails(){
 

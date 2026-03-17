@@ -7,6 +7,24 @@ class Train {
     int totalCoaches;
 
     Boggy boggy;
+	
+	
+	
+	 // Default constructor
+    public Train() {
+    }
+
+    // Parameterized constructor
+    public Train(int trainId, String trainName, String source, String destination, int totalCoaches, Boggy boggy) {
+
+        this.trainId = trainId;
+        this.trainName = trainName;
+        this.source = source;
+        this.destination = destination;
+        this.totalCoaches = totalCoaches;
+        this.boggy = boggy;
+
+    }
 
     public void getTrainDetails(){
 

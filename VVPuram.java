@@ -8,6 +8,17 @@ class VVPuram {
     String famousFor;
 
     FoodStreet foodStreet;
+	
+	 public VVPuram() {}
+
+    public VVPuram(int streetId, String streetName, String city, int establishedYear, String famousFor, FoodStreet foodStreet) {
+        this.streetId = streetId;
+        this.streetName = streetName;
+        this.city = city;
+        this.establishedYear = establishedYear;
+        this.famousFor = famousFor;
+        this.foodStreet = foodStreet;
+    }
 
     public void getStreetDetails(){
 

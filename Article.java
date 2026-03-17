@@ -6,6 +6,16 @@ class Article {
     String category;
     String author;
     int wordCount;
+	
+	public Article() {}
+
+    public Article(int articleId, String title, String category, String author, int wordCount) {
+        this.articleId = articleId;
+        this.title = title;
+        this.category = category;
+        this.author = author;
+        this.wordCount = wordCount;
+    }
 
     public void getArticleDetails(){
 

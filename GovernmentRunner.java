@@ -1,6 +1,10 @@
 class GovernmentRunner {
 
     public static void main(String[] args) {
+		
+		 Policy p = new Policy(1, "Digital India", "Tech", "Digital Growth", 2015);
+        Government g = new Government(101, "India", "PM", 1950, "Democracy", p);
+        g.getGovernmentDetails();
 
         Government gov1 = new Government();
         Policy policy1 = new Policy();

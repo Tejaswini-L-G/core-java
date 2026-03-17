@@ -1,6 +1,10 @@
 class Formula1Runner {
 
     public static void main(String[] args) {
+		
+		 Franchise f = new Franchise(1, "Ferrari", "Italy", "Vasseur", 16);
+        Formula1 f1 = new Formula1(2024, "FIA", 10, "Rolex", "Abu Dhabi", f);
+        f1.getFormula1Details();
 
         Formula1 f11 = new Formula1();
         Franchise team1 = new Franchise();

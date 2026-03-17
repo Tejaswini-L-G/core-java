@@ -1,6 +1,10 @@
 class ProgrammingLanguageRunner {
 
     public static void main(String[] args) {
+		
+		 Syntax s = new Syntax(1, "Loop", "Iteration", "for()", "Control");
+        ProgrammingLanguage p = new ProgrammingLanguage(101, "Java", "James Gosling", 1995, "OOP", s);
+        p.getProgrammingLanguageDetails();
 
         ProgrammingLanguage lang1 = new ProgrammingLanguage();
         Syntax syntax1 = new Syntax();

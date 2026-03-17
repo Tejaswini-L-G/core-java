@@ -8,6 +8,17 @@ class Universe {
     String observationTool;
 
     Earth earth;
+	
+	 public Universe() {}
+
+    public Universe(int universeId, String galaxyName, int galaxyCount, String discoveredBy, String observationTool, Earth earth) {
+        this.universeId = universeId;
+        this.galaxyName = galaxyName;
+        this.galaxyCount = galaxyCount;
+        this.discoveredBy = discoveredBy;
+        this.observationTool = observationTool;
+        this.earth = earth;
+    }
 
     public void getUniverseDetails(){
 

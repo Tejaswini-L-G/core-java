@@ -8,6 +8,17 @@ class Wonderla {
     String openingYear;
 
     LazyPool lazyPool;
+	
+	public Wonderla() {}
+
+    public Wonderla(int parkId, String parkLocation, String parkCity, int totalRides, String openingYear, LazyPool lazyPool) {
+        this.parkId = parkId;
+        this.parkLocation = parkLocation;
+        this.parkCity = parkCity;
+        this.totalRides = totalRides;
+        this.openingYear = openingYear;
+        this.lazyPool = lazyPool;
+    }
 
     public void getWonderlaDetails(){
 

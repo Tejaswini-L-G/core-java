@@ -1,6 +1,10 @@
 class IplRunner {
 
     public static void main(String[] args) {
+		
+		Player player = new Player(1, "Virat Kohli", "RCB", "Batsman", 18);
+        Ipl ipl = new Ipl(2024, "Ahmedabad", "TATA", 10, "IPL Trophy", player);
+        ipl.getIplDetails();
 
         Ipl ipl1 = new Ipl();
         Player player1 = new Player();

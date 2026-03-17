@@ -8,6 +8,18 @@ class PeriodicTable {
     String category;
 
     Element element;
+	
+	 public PeriodicTable() {}
+
+    public PeriodicTable(int tableId, String scientist, int totalElements, int discoveryYear, String category, Element element) {
+        this.tableId = tableId;
+        this.scientist = scientist;
+        this.totalElements = totalElements;
+        this.discoveryYear = discoveryYear;
+        this.category = category;
+        this.element = element;
+    }
+
 
     public void getPeriodicTableDetails(){
 

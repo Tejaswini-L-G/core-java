@@ -1,6 +1,10 @@
 class CompanyRunner {
 
     public static void main(String[] args) {
+		
+		Project p = new Project(1, "AI System", "AI", 25, "Ongoing");
+        Company c = new Company(101, "TechNova", "Bangalore", 2010, "Arjun", p);
+        c.getCompanyDetails();
 
         Company company1 = new Company();
         Project project1 = new Project();

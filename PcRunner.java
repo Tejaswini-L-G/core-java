@@ -1,6 +1,10 @@
 class PcRunner {
 
     public static void main(String[] args) {
+		
+		Hardware hardware = new Hardware(1, "Intel i7", "Intel", "CPU", 3);
+        Pc pc = new Pc(101, "Dell", "i7", 16, 512, hardware);
+        pc.getPcDetails();
 
         Pc pc1 = new Pc();
         Hardware hardware1 = new Hardware();

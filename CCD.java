@@ -8,6 +8,19 @@ class CCD {
     String founder;
 
     Coffee coffee;
+	
+	public CCD() {}
+
+    public CCD(int cafeId, String cafeName, String city, int establishedYear, String founder, Coffee coffee) {
+        this();
+		this.cafeId = cafeId;
+        this.cafeName = cafeName;
+        this.city = city;
+        this.establishedYear = establishedYear;
+        this.founder = founder;
+        this.coffee = coffee;
+    }
+
 
     public void getCafeDetails(){
 

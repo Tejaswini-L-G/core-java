@@ -8,6 +8,17 @@ class Dance {
     String founder;
 
     Form form;
+	
+	public Dance() {}
+
+    public Dance(int danceId, String danceAcademy, String country, int establishedYear, String founder, Form form) {
+        this.danceId = danceId;
+        this.danceAcademy = danceAcademy;
+        this.country = country;
+        this.establishedYear = establishedYear;
+        this.founder = founder;
+        this.form = form;
+    }
 
     public void getDanceDetails(){
 

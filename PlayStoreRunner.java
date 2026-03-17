@@ -1,6 +1,10 @@
 class PlayStoreRunner {
 
     public static void main(String[] args) {
+		
+		 Application app = new Application(1, "WhatsApp", "Communication", 4.5, "Meta");
+        PlayStore store = new PlayStore(101, "Google", "Android", 3000000, "California", app);
+        store.getPlayStoreDetails();
 
         PlayStore store1 = new PlayStore();
         Application app1 = new Application();

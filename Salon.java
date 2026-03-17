@@ -8,6 +8,16 @@ class Salon {
     String owner;
 
     Service service;
+	 public Salon() {}
+
+    public Salon(int salonId, String salonName, String location, int establishedYear, String owner, Service service) {
+        this.salonId = salonId;
+        this.salonName = salonName;
+        this.location = location;
+        this.establishedYear = establishedYear;
+        this.owner = owner;
+        this.service = service;
+    }
 
     public void getSalonDetails(){
 

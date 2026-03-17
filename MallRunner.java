@@ -1,6 +1,10 @@
 class MallRunner {
 
     public static void main(String[] args) {
+		
+		Shop shop = new Shop(1, "Nike Store", "Sportswear", 15, "Nike");
+        Mall mall = new Mall(101, "Orion Mall", "Bangalore", 5, "Brigade", shop);
+        mall.getMallDetails();
 
         Mall mall1 = new Mall();
         Shop shop1 = new Shop();

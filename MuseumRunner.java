@@ -1,6 +1,10 @@
 class MuseumRunner {
 
     public static void main(String[] args) {
+		
+		 Diamond d = new Diamond(1, "Kohinoor", "India", 105.6, "Colorless");
+        Museum m = new Museum(101, "National Museum", "Delhi", 1949, "Board", d);
+        m.getMuseumDetails();
 
         Museum museum1 = new Museum();
         Diamond diamond1 = new Diamond();

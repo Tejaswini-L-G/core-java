@@ -8,6 +8,17 @@ class Museum {
     String curator;
 
     Diamond diamond;
+	
+	 public Museum() {}
+
+    public Museum(int museumId, String museumName, String city, int establishedYear, String curator, Diamond diamond) {
+        this.museumId = museumId;
+        this.museumName = museumName;
+        this.city = city;
+        this.establishedYear = establishedYear;
+        this.curator = curator;
+        this.diamond = diamond;
+    }
 
     public void getMuseumDetails(){
 

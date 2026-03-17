@@ -1,6 +1,10 @@
 class ProductionHouseRunner {
 
     public static void main(String[] args) {
+		
+		 Movie m = new Movie(1, "Inception", "Nolan", "SciFi", 2010);
+        ProductionHouse p = new ProductionHouse(101, "Warner Bros", "Hollywood", 1923, "Founders", m);
+        p.getProductionDetails();
 
         ProductionHouse ph1 = new ProductionHouse();
         Movie movie1 = new Movie();

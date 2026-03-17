@@ -6,6 +6,17 @@ class FoodStreet {
     String cuisine;
     double price;
     String popularity;
+	
+	 public FoodStreet() {}
+
+    public FoodStreet(int stallId, String foodName, String cuisine, double price, String popularity) {
+        this.stallId = stallId;
+        this.foodName = foodName;
+        this.cuisine = cuisine;
+        this.price = price;
+        this.popularity = popularity;
+    }
+
 
     public void getFoodDetails(){
 

@@ -8,6 +8,17 @@ class Government {
     String system;
 
     Policy policy;
+	
+	public Government() {}
+
+    public Government(int governmentId, String country, String leader, int establishedYear, String system, Policy policy) {
+        this.governmentId = governmentId;
+        this.country = country;
+        this.leader = leader;
+        this.establishedYear = establishedYear;
+        this.system = system;
+        this.policy = policy;
+    }
 
     public void getGovernmentDetails(){
 

@@ -8,6 +8,18 @@ class Factory {
     String industryType;
 
     Machine machine;
+	
+	 public Factory() {}
+
+    public Factory(int factoryId, String factoryName, String location, int establishedYear, String industryType, Machine machine) {
+        this.factoryId = factoryId;
+        this.factoryName = factoryName;
+        this.location = location;
+        this.establishedYear = establishedYear;
+        this.industryType = industryType;
+        this.machine = machine;
+    }
+
 
     public void getFactoryDetails(){
 

@@ -1,6 +1,10 @@
 class PeriodicTableRunner {
 
     public static void main(String[] args) {
+		
+		Element e = new Element(1, "Hydrogen", "H", "Nonmetal", 1.008);
+        PeriodicTable pt = new PeriodicTable(1, "Mendeleev", 118, 1869, "Chemical", e);
+        pt.getPeriodicTableDetails();
 
         PeriodicTable table1 = new PeriodicTable();
         Element element1 = new Element();

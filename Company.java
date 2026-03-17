@@ -8,6 +8,18 @@ class Company {
     String ceo;
 
     Project project;
+	
+	 public Company() {}
+
+    public Company(int companyId, String companyName, String headquarters, int establishedYear, String ceo, Project project) {
+        this.companyId = companyId;
+        this.companyName = companyName;
+        this.headquarters = headquarters;
+        this.establishedYear = establishedYear;
+        this.ceo = ceo;
+        this.project = project;
+    }
+
 
     public void getCompanyDetails(){
 

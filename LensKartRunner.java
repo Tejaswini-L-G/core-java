@@ -1,6 +1,10 @@
 class LensKartRunner {
 
     public static void main(String[] args) {
+		
+		 Frame f = new Frame(1, "Aviator", "Metal", "Gold", 2499);
+        LensKart l = new LensKart(101, "LensKart", "Gurgaon", 2010, "Peyush", f);
+        l.getLensKartDetails();
 
         LensKart store1 = new LensKart();
         Frame frame1 = new Frame();

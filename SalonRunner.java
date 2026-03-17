@@ -1,6 +1,10 @@
 class SalonRunner {
 
     public static void main(String[] args) {
+		
+		Service s = new Service(1, "Haircut", 300, 30, "Stylist");
+        Salon salon = new Salon(101, "Urban Salon", "Bangalore", 2015, "Group", s);
+        salon.getSalonDetails();
 
         Salon salon1 = new Salon();
         Service service1 = new Service();

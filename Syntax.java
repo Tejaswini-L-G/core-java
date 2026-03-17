@@ -6,6 +6,17 @@ class Syntax {
     String exampleKeyword;
     String description;
     String usageArea;
+	
+	 public Syntax() {}
+
+    public Syntax(int syntaxId, String ruleName, String description, String example, String category) {
+        this.syntaxId = syntaxId;
+        this.ruleName = ruleName;
+        this.description = description;
+        this.example = example;
+        this.category = category;
+    }
+
 
     public void getSyntaxDetails(){
 

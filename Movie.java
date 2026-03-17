@@ -6,6 +6,16 @@ class Movie {
     String director;
     String genre;
     int releaseYear;
+	
+	 public Movie() {}
+
+    public Movie(int movieId, String title, String director, String genre, int releaseYear) {
+        this.movieId = movieId;
+        this.title = title;
+        this.director = director;
+        this.genre = genre;
+        this.releaseYear = releaseYear;
+    }
 
     public void getMovieDetails(){
 

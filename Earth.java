@@ -6,6 +6,16 @@ class Earth {
     String country;
     long population;
     String climate;
+	
+	 public Earth() {}
+
+    public Earth(int earthId, String continent, String country, long population, String climate) {
+        this.earthId = earthId;
+        this.continent = continent;
+        this.country = country;
+        this.population = population;
+        this.climate = climate;
+    }
 
     public void getEarthDetails(){
 

@@ -8,6 +8,18 @@ class NewsPaper {
     String editor;
 
     Article article;
+	
+	 public NewsPaper() {}
+
+    public NewsPaper(int paperId, String paperName, String country, int foundedYear, String editor, Article article) {
+        this.paperId = paperId;
+        this.paperName = paperName;
+        this.country = country;
+        this.foundedYear = foundedYear;
+        this.editor = editor;
+        this.article = article;
+    }
+
 
     public void getNewsPaperDetails(){
 

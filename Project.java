@@ -6,6 +6,16 @@ class Project {
     String domain;
     int teamSize;
     String status;
+	
+	 public Project() {}
+
+    public Project(int projectId, String projectName, String domain, int teamSize, String status) {
+        this.projectId = projectId;
+        this.projectName = projectName;
+        this.domain = domain;
+        this.teamSize = teamSize;
+        this.status = status;
+    }
 
     public void getProjectDetails(){
 

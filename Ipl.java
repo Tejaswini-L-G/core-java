@@ -8,6 +8,19 @@ class Ipl {
     String trophyName;
 
     Player player;
+	
+	    public Ipl() {}
+
+    public Ipl(int seasonYear, String hostCity, String sponsor, int totalTeams, String trophyName, Player player) {
+        this.seasonYear = seasonYear;
+        this.hostCity = hostCity;
+        this.sponsor = sponsor;
+        this.totalTeams = totalTeams;
+        this.trophyName = trophyName;
+        this.player = player;
+    }
+
+
 
     public void getIplDetails(){
 

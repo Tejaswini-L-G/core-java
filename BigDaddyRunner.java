@@ -1,6 +1,10 @@
 class BigDaddyRunner {
 
     public static void main(String[] args) {
+		
+		Casino c = new Casino(1, "Poker", "Card", 6, "High");
+        BigDaddy b = new BigDaddy(101, "Big Daddy", "Goa", 2016, "Delta", c);
+        b.getBigDaddyDetails();
 
         BigDaddy ship1 = new BigDaddy();
         Casino casino1 = new Casino();

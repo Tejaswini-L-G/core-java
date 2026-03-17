@@ -1,6 +1,10 @@
 class UniverseRunner {
 
     public static void main(String[] args) {
+		
+		Earth e = new Earth(1, "Asia", "India", 1400000000L, "Tropical");
+        Universe u = new Universe(101, "Milky Way", 2000000000, "Hubble", "Telescope", e);
+        u.getUniverseDetails();
 
         Universe universe1 = new Universe();
         Earth earth1 = new Earth();

@@ -6,6 +6,16 @@ class Stock {
     String sector;
     double price;
     String exchange;
+	
+	 public Stock() {}
+
+    public Stock(int stockId, String stockName, String sector, double price, String exchange) {
+        this.stockId = stockId;
+        this.stockName = stockName;
+        this.sector = sector;
+        this.price = price;
+        this.exchange = exchange;
+    }
 
     public void getStockDetails(){
 
