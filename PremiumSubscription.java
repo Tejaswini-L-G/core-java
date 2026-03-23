@@ -1,0 +1,2 @@
+class PremiumSubscription extends Subscription {
+}

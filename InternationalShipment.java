@@ -1,0 +1,2 @@
+class InternationalShipment extends Shipment {
+}

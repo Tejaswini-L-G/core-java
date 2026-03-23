@@ -1,0 +1,2 @@
+class OtpLogin extends Login {
+}

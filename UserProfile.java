@@ -1,0 +1,2 @@
+class UserProfile extends Profile {
+}

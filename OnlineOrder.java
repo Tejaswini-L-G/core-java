@@ -1,0 +1,2 @@
+class OnlineOrder extends Order {
+}

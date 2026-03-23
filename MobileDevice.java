@@ -1,0 +1,2 @@
+class MobileDevice extends Device {
+}

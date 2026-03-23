@@ -1,0 +1,2 @@
+class GstInvoice extends Invoice {
+}

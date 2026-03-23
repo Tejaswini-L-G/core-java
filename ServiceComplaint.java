@@ -1,0 +1,2 @@
+class ServiceComplaint extends Complaint {
+}

@@ -1,0 +1,2 @@
+class LegalDocument extends Document {
+}

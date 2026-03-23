@@ -1,0 +1,2 @@
+class SmsMessage extends Message {
+}

@@ -1,0 +1,2 @@
+class ExpressDelivery extends Delivery {
+}

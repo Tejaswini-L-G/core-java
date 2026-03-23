@@ -1,0 +1,2 @@
+class MovieTicket extends Ticket {
+}
