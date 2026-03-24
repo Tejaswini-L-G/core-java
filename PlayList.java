@@ -1,0 +1,21 @@
+class PlayList {
+    private String songNames[] = new String[15];
+    int index;
+
+    public boolean addSongnames(String value) {
+        boolean isAdded=false;
+        if(value!=null && !value.isEmpty()){
+            if(index<15){
+                songNames[index]=value;
+                index++;
+                isAdded=true;
+            }else{System.out.println("Array full");}
+        }else{System.out.println("Invalid input");}
+        return isAdded;
+    }
+
+    public void getSongnames(){
+        System.out.println("PlayList Data:");
+        for(String item:songNames){if(item!=null)System.out.println(item);}
+    }
+}

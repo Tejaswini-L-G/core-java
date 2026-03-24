@@ -1,0 +1,28 @@
+class WonderlaRunner{
+ public static void main(String[] args){
+  Wonderla manager=new Wonderla();
+  manager.addWatergames("Wave Pool");
+  manager.addWatergames("Rain Disco");
+  manager.addWatergames("Lazy River");
+  manager.addWatergames("Boomerang Ride");
+  manager.addWatergames("Harakiri Slide");
+  manager.addWatergames("Water Pendulum");
+  manager.addWatergames("Play Pool");
+  manager.addWatergames("Kids Pool");
+  manager.addWatergames("Drop Loop");
+  manager.addWatergames("Wave Rider");
+  manager.addWatergames("Splash Tower");
+  manager.addWatergames("Cyclone Ride");
+  manager.addWatergames("Thunder Falls");
+  manager.addWatergames("Rapid River");
+  manager.addWatergames("Aqua Loop");
+  manager.addWatergames("Twister Ride");
+  manager.addWatergames("Family Slide");
+  manager.addWatergames("Fun Pool");
+  manager.addWatergames("Water Coaster");
+  manager.addWatergames("Aqua Dance");
+  manager.addWatergames("Pirate Ship");
+  manager.addWatergames("Mini Slides");
+  manager.getWatergames();
+ }
+}
