@@ -28,5 +28,15 @@ class ECommerceRunner{
   manager.addProductnames("Bluetooth Speaker");
   manager.addProductnames("Fitness Band");
   manager.getProductnames();
+  
+  int index=0;
+System.out.println("The product at position "+index+" is "+ eCommerce.getProductNamesByIndex(index));
+
+String name="iPhone 14";
+int result = eCommerce.getIndexByProductNames(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

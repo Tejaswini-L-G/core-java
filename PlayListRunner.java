@@ -17,5 +17,15 @@ class PlayListRunner{
   manager.addSongnames("Bad Guy");
   manager.addSongnames("Heat Waves");
   manager.getSongnames();
+  
+  int index=0;
+System.out.println("The song at position "+index+" is "+ playList.getSongNamesByIndex(index));
+
+String name="Believer";
+int result = playList.getIndexBySongNames(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

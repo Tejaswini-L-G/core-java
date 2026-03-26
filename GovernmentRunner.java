@@ -11,5 +11,15 @@ class GovernmentRunner{
   manager.addCompetitiveexamnames("CAT");
   manager.addCompetitiveexamnames("NDA");
   manager.getCompetitiveexamnames();
+  
+  int index=0;
+System.out.println("The exam at position "+index+" is "+ government.getCompetitiveExamNamesByIndex(index));
+
+String name="UPSC";
+int result = government.getIndexByCompetitiveExamNames(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

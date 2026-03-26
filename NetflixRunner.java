@@ -20,5 +20,15 @@ class NetflixRunner{
   manager.addWebseries("Manifest");
   manager.addWebseries("Vikings");
   manager.getWebseries();
+  
+  int index=0;
+System.out.println("The web series at position "+index+" is "+ netflix.getWebSeriesByIndex(index));
+
+String name="Dark";
+int result = netflix.getIndexByWebSeries(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

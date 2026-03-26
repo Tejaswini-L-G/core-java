@@ -19,5 +19,15 @@ class UniverseRunner{
   manager.addGalaxies("NGC 1300");
   manager.addGalaxies("NGC 4622");
   manager.getGalaxies();
+  
+  int index=0;
+System.out.println("The galaxy at position "+index+" is "+ universe.getGalaxiesByIndex(index));
+
+String name="Milky Way";
+int result = universe.getIndexByGalaxies(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

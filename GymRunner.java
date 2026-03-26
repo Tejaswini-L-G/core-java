@@ -18,5 +18,15 @@ class GymRunner{
   manager.addEquipments("Ab Roller");
   manager.addEquipments("Punching Bag");
   manager.getEquipments();
+  
+  int index=0;
+System.out.println("The equipment at position "+index+" is "+ gym.getEquipmentsByIndex(index));
+
+String name="Treadmill";
+int result = gym.getIndexByEquipments(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

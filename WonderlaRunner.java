@@ -24,5 +24,15 @@ class WonderlaRunner{
   manager.addWatergames("Pirate Ship");
   manager.addWatergames("Mini Slides");
   manager.getWatergames();
+  
+  int index=0;
+System.out.println("The game at position "+index+" is "+ wonderla.getWaterGamesByIndex(index));
+
+String name="Wave Pool";
+int result = wonderla.getIndexByWaterGames(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

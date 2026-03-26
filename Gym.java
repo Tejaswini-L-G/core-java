@@ -18,4 +18,30 @@ class Gym {
         System.out.println("Gym Data:");
         for(String item:equipments){if(item!=null)System.out.println(item);}
     }
+	
+	public String getEquipmentsByIndex(int index){
+    String name=null;
+    if(index<equipments.length){
+        name=equipments[index];
+    }else{
+        System.out.println("Invalid index value "+index);
+    }
+    return name;
+}
+
+public int getIndexByEquipments(String name){
+    int index=0;
+    if(name!=null && !name.isEmpty()){
+        for(String item:equipments){
+            if(name.equals(item)){
+                return index;
+            }
+            index++;
+        }
+        System.out.println("Equipment not found");
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return 0;
+}
 }

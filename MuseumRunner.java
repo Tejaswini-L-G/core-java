@@ -18,5 +18,15 @@ class MuseumRunner{
   manager.addHistoricalmonuments("Fatehpur Sikri");
   manager.addHistoricalmonuments("Humayun Tomb");
   manager.getHistoricalmonuments();
+  
+  int index=0;
+System.out.println("The monument at position "+index+" is "+ museum.getHistoricalMonumentsByIndex(index));
+
+String name="Taj Mahal";
+int result = museum.getIndexByHistoricalMonuments(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

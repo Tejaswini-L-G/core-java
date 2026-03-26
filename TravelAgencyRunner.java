@@ -19,5 +19,15 @@ class TravelAgencyRunner{
   manager.addPlaces("Amsterdam");
   manager.addPlaces("Venice");
   manager.getPlaces();
+  
+  int index=0;
+System.out.println("The place at position "+index+" is "+ travelAgency.getPlacesByIndex(index));
+
+String name="Paris";
+int result = travelAgency.getIndexByPlaces(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

@@ -13,5 +13,15 @@ class ArchitectRunner{
   manager.addInteriordesignnames("Vintage Style");
   manager.addInteriordesignnames("Luxury Design");
   manager.getInteriordesignnames();
+  
+  int index=0;
+System.out.println("The design at position "+index+" is "+ architect.getInteriorDesignNamesByIndex(index));
+
+String name="Modern Design";
+int result = architect.getIndexByInteriorDesignNames(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

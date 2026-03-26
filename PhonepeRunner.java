@@ -29,5 +29,15 @@ class PhonepeRunner{
   manager.addInsurancenames("Business Insurance");
   manager.addInsurancenames("Micro Insurance");
   manager.getInsurancenames();
+  
+  int index=0;
+System.out.println("The insurance at position "+index+" is "+ phonepe.getInsuranceNamesByIndex(index));
+
+String name="Health Insurance";
+int result = phonepe.getIndexByInsuranceNames(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

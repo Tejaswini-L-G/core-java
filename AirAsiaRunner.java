@@ -32,5 +32,15 @@ class AirAsiaRunner{
   manager.addPassengers("Yash Bansal");
   manager.addPassengers("Nidhi Saxena");
   manager.getPassengers();
+  
+  int index=0;
+System.out.println("The passenger at position "+index+" is "+ airAsia.getPassengersByIndex(index));
+
+String name="Aarav Sharma";
+int result = airAsia.getIndexByPassengers(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

@@ -19,5 +19,15 @@ class TelevisionRunner{
   manager.addChannelnames("History TV");
   manager.addChannelnames("Animal Planet");
   manager.getChannelnames();
+  
+  int index=0;
+System.out.println("The channel at position "+index+" is "+ television.getChannelNamesByIndex(index));
+
+String name="Star Plus";
+int result = television.getIndexByChannelNames(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

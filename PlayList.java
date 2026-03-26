@@ -18,4 +18,30 @@ class PlayList {
         System.out.println("PlayList Data:");
         for(String item:songNames){if(item!=null)System.out.println(item);}
     }
+	
+	public String getSongNamesByIndex(int index){
+    String name=null;
+    if(index<songNames.length){
+        name=songNames[index];
+    }else{
+        System.out.println("Invalid index value "+index);
+    }
+    return name;
+}
+
+public int getIndexBySongNames(String name){
+    int index=0;
+    if(name!=null && !name.isEmpty()){
+        for(String item:songNames){
+            if(name.equals(item)){
+                return index;
+            }
+            index++;
+        }
+        System.out.println("Song not found");
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return 0;
+}
 }

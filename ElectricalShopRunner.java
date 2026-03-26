@@ -22,5 +22,15 @@ class ElectricalShopRunner{
   manager.addAppliances("Blender");
   manager.addAppliances("Air Cooler");
   manager.getAppliances();
+  
+  int index=0;
+System.out.println("The appliance at position "+index+" is "+ electricalShop.getAppliancesByIndex(index));
+
+String name="Fan";
+int result = electricalShop.getIndexByAppliances(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

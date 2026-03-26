@@ -21,5 +21,15 @@ class GoaRunner{
   manager.addBeachnames("Varca Beach");
   manager.addBeachnames("Benaulim Beach");
   manager.getBeachnames();
+  
+  int index=0;
+System.out.println("The beach at position "+index+" is "+ goa.getBeachNamesByIndex(index));
+
+String name="Baga Beach";
+int result = goa.getIndexByBeachNames(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

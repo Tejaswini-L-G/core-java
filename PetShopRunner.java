@@ -22,5 +22,15 @@ class PetShopRunner{
   manager.addPetaccessories("Pet Comb");
   manager.addPetaccessories("Pet Toys");
   manager.getPetaccessories();
+  
+  int index=0;
+System.out.println("The accessory at position "+index+" is "+ petShop.getPetAccessoriesByIndex(index));
+
+String name="Dog Collar";
+int result = petShop.getIndexByPetAccessories(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }

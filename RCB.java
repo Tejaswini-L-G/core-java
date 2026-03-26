@@ -18,4 +18,30 @@ class RCB {
         System.out.println("RCB Data:");
         for(String item:playerNames){if(item!=null)System.out.println(item);}
     }
+	
+	public String getPlayerNamesByIndex(int index){
+    String name=null;
+    if(index<playerNames.length){
+        name=playerNames[index];
+    }else{
+        System.out.println("Invalid index value "+index);
+    }
+    return name;
+}
+
+public int getIndexByPlayerNames(String name){
+    int index=0;
+    if(name!=null && !name.isEmpty()){
+        for(String item:playerNames){
+            if(name.equals(item)){
+                return index;
+            }
+            index++;
+        }
+        System.out.println("Player not found");
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return 0;
+}
 }

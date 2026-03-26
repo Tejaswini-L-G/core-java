@@ -10,5 +10,15 @@ class CricBuzRunner{
   manager.addTeamnames("Sri Lanka");
   manager.addTeamnames("West Indies");
   manager.getTeamnames();
+  
+  int index=0;
+System.out.println("The team at position "+index+" is "+ cricBuz.getTeamNamesByIndex(index));
+
+String name="India";
+int result = cricBuz.getIndexByTeamNames(name);
+
+if(result != 0 ){
+    System.out.println("The Position of " + name + " is " + result);
+}
  }
 }
