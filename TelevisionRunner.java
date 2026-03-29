@@ -29,5 +29,15 @@ int result = television.getIndexByChannelNames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = television.updateChannelNames("Star Plus","Star Plus HD");
+System.out.println("The updation is " + isUpdated);
+television.getChannelNames();
+
+System.out.println("--------------------------");
+boolean isDeleted = television.deleteChannelNames("Star Plus");
+System.out.println("The deletion is " + isDeleted);
+television.getChannelNames();
  }
 }

@@ -44,4 +44,42 @@ public int getIndexByAppliances(String name){
     }
     return 0;
 }
+
+public boolean updateAppliances(String existingName,String updatedName){
+    boolean isUpdated=false;
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<appliances.length; index++){
+            if(appliances[index]==existingName){
+                appliances[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+
+public boolean deleteAppliances(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<appliances.length; index++){
+            if(appliances[index]!=null && appliances[index]==name){
+                appliances[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

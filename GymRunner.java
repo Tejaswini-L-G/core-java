@@ -28,5 +28,15 @@ int result = gym.getIndexByEquipments(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = gym.updateEquipments("Treadmill","Advanced Treadmill");
+System.out.println("The updation is " + isUpdated);
+gym.getEquipments();
+
+System.out.println("--------------------------");
+boolean isDeleted = gym.deleteEquipments("Treadmill");
+System.out.println("The deletion is " + isDeleted);
+gym.getEquipments();
  }
 }

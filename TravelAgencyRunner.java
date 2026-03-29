@@ -29,5 +29,15 @@ int result = travelAgency.getIndexByPlaces(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = travelAgency.updatePlaces("Paris","Paris France");
+System.out.println("The updation is " + isUpdated);
+travelAgency.getPlaces();
+
+System.out.println("--------------------------");
+boolean isDeleted = travelAgency.deletePlaces("Paris");
+System.out.println("The deletion is " + isDeleted);
+travelAgency.getPlaces();
  }
 }

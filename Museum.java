@@ -44,4 +44,42 @@ public int getIndexByHistoricalMonuments(String name){
     }
     return 0;
 }
+
+public boolean updateHistoricalMonuments(String existingName,String updatedName){
+    boolean isUpdated=false;
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<historicalMonuments.length; index++){
+            if(historicalMonuments[index]==existingName){
+                historicalMonuments[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+
+public boolean deleteHistoricalMonuments(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<historicalMonuments.length; index++){
+            if(historicalMonuments[index]!=null && historicalMonuments[index]==name){
+                historicalMonuments[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

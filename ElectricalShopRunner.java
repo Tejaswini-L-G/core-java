@@ -32,5 +32,15 @@ int result = electricalShop.getIndexByAppliances(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = electricalShop.updateAppliances("Fan","Ceiling Fan");
+System.out.println("The updation is " + isUpdated);
+electricalShop.getAppliances();
+
+System.out.println("--------------------------");
+boolean isDeleted = electricalShop.deleteAppliances("Fan");
+System.out.println("The deletion is " + isDeleted);
+electricalShop.getAppliances();
  }
 }

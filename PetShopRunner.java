@@ -32,5 +32,15 @@ int result = petShop.getIndexByPetAccessories(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = petShop.updatePetAccessories("Dog Collar","Premium Dog Collar");
+System.out.println("The updation is " + isUpdated);
+petShop.getPetAccessories();
+
+System.out.println("--------------------------");
+boolean isDeleted = petShop.deletePetAccessories("Dog Collar");
+System.out.println("The deletion is " + isDeleted);
+petShop.getPetAccessories();
  }
 }

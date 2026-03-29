@@ -44,4 +44,43 @@ public int getIndexByEquipments(String name){
     }
     return 0;
 }
+
+public boolean updateEquipments(String existingName,String updatedName){
+    boolean isUpdated=false;
+
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<equipments.length; index++){
+            if(equipments[index]==existingName){
+                equipments[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+
+public boolean deleteEquipments(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<equipments.length; index++){
+            if(equipments[index]!=null && equipments[index]==name){
+                equipments[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

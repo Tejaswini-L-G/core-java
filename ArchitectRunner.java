@@ -23,5 +23,15 @@ int result = architect.getIndexByInteriorDesignNames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = architect.updateInteriorDesignNames("Modern Design","Luxury Modern Design");
+System.out.println("The updation is " + isUpdated);
+architect.getInteriorDesignNames();
+
+System.out.println("--------------------------");
+boolean isDeleted = architect.deleteInteriorDesignNames("Modern Design");
+System.out.println("The deletion is " + isDeleted);
+architect.getInteriorDesignNames();
  }
 }

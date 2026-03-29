@@ -39,5 +39,15 @@ int result = phonepe.getIndexByInsuranceNames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = phonepe.updateInsuranceNames("Health Insurance","Premium Health Insurance");
+System.out.println("The updation is " + isUpdated);
+phonepe.getInsuranceNames();
+
+System.out.println("--------------------------");
+boolean isDeleted = phonepe.deleteInsuranceNames("Health Insurance");
+System.out.println("The deletion is " + isDeleted);
+phonepe.getInsuranceNames();
  }
 }

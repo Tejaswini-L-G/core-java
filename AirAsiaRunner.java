@@ -42,5 +42,15 @@ int result = airAsia.getIndexByPassengers(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = airAsia.updatePassengers("Aarav","Aarav Sharma");
+System.out.println("The updation is " + isUpdated);
+airAsia.getPassengers();
+
+System.out.println("--------------------------");
+boolean isDeleted = airAsia.deletePassengers("Aarav Sharma");
+System.out.println("The deletion is " + isDeleted);
+airAsia.getPassengers();
  }
 }

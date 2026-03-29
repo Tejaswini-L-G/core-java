@@ -44,4 +44,42 @@ public int getIndexByGalaxies(String name){
     }
     return 0;
 }
+
+public boolean updateGalaxies(String existingName,String updatedName){
+    boolean isUpdated=false;
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<galaxies.length; index++){
+            if(galaxies[index]==existingName){
+                galaxies[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+
+public boolean deleteGalaxies(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<galaxies.length; index++){
+            if(galaxies[index]!=null && galaxies[index]==name){
+                galaxies[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

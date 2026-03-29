@@ -44,4 +44,41 @@ public int getIndexByPlaces(String name){
     }
     return 0;
 }
+public boolean updatePlaces(String existingName,String updatedName){
+    boolean isUpdated=false;
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<places.length; index++){
+            if(places[index]==existingName){
+                places[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+
+public boolean deletePlaces(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<places.length; index++){
+            if(places[index]!=null && places[index]==name){
+                places[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

@@ -44,4 +44,42 @@ public int getIndexByCompetitiveExamNames(String name){
     }
     return 0;
 }
+
+public boolean updateCompetitiveExamNames(String existingName,String updatedName){
+    boolean isUpdated=false;
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<competitiveExamNames.length; index++){
+            if(competitiveExamNames[index]==existingName){
+                competitiveExamNames[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+
+public boolean deleteCompetitiveExamNames(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<competitiveExamNames.length; index++){
+            if(competitiveExamNames[index]!=null && competitiveExamNames[index]==name){
+                competitiveExamNames[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

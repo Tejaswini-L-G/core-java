@@ -44,4 +44,43 @@ public int getIndexByWebSeries(String name){
     }
     return 0;
 }
+
+public boolean updateWebSeries(String existingName,String updatedName){
+    boolean isUpdated=false;
+
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<webSeries.length; index++){
+            if(webSeries[index]==existingName){
+                webSeries[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+
+public boolean deleteWebSeries(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<webSeries.length; index++){
+            if(webSeries[index]!=null && webSeries[index]==name){
+                webSeries[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

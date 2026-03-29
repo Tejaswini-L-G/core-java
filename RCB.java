@@ -44,4 +44,42 @@ public int getIndexByPlayerNames(String name){
     }
     return 0;
 }
+
+public boolean updatePlayerNames(String existingName,String updatedName){
+    boolean isUpdated=false;
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<playerNames.length; index++){
+            if(playerNames[index]==existingName){
+                playerNames[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+
+public boolean deletePlayerNames(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<playerNames.length; index++){
+            if(playerNames[index]!=null && playerNames[index]==name){
+                playerNames[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

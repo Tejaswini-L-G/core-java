@@ -44,4 +44,43 @@ public int getIndexByInsuranceNames(String name){
     }
     return 0;
 }
+
+public boolean updateInsuranceNames(String existingName,String updatedName){
+    boolean isUpdated=false;
+
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<insuranceNames.length; index++){
+            if(insuranceNames[index]==existingName){
+                insuranceNames[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+
+public boolean deleteInsuranceNames(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<insuranceNames.length; index++){
+            if(insuranceNames[index]!=null && insuranceNames[index]==name){
+                insuranceNames[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

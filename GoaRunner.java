@@ -31,5 +31,15 @@ int result = goa.getIndexByBeachNames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = goa.updateBeachNames("Baga Beach","Baga Beach Goa");
+System.out.println("The updation is " + isUpdated);
+goa.getBeachNames();
+
+System.out.println("--------------------------");
+boolean isDeleted = goa.deleteBeachNames("Baga Beach");
+System.out.println("The deletion is " + isDeleted);
+goa.getBeachNames();
  }
 }

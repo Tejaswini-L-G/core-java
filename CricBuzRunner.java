@@ -20,5 +20,15 @@ int result = cricBuz.getIndexByTeamNames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = cricBuz.updateTeamNames("India","Team India");
+System.out.println("The updation is " + isUpdated);
+cricBuz.getTeamNames();
+
+System.out.println("--------------------------");
+boolean isDeleted = cricBuz.deleteTeamNames("India");
+System.out.println("The deletion is " + isDeleted);
+cricBuz.getTeamNames();
  }
 }

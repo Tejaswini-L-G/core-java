@@ -44,4 +44,42 @@ public int getIndexByWaterGames(String name){
     }
     return 0;
 }
+
+public boolean updateWaterGames(String existingName,String updatedName){
+    boolean isUpdated=false;
+
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<waterGames.length; index++){
+            if(waterGames[index]==existingName){
+                waterGames[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+public boolean deleteWaterGames(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<waterGames.length; index++){
+            if(waterGames[index]!=null && waterGames[index]==name){
+                waterGames[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

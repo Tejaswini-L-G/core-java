@@ -28,5 +28,15 @@ int result = museum.getIndexByHistoricalMonuments(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = museum.updateHistoricalMonuments("Taj Mahal","Taj Mahal India");
+System.out.println("The updation is " + isUpdated);
+museum.getHistoricalMonuments();
+
+System.out.println("--------------------------");
+boolean isDeleted = museum.deleteHistoricalMonuments("Taj Mahal");
+System.out.println("The deletion is " + isDeleted);
+museum.getHistoricalMonuments();
  }
 }

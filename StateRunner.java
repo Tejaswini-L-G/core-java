@@ -21,5 +21,15 @@ int result = state.getIndexByHighwayNames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = state.updateHighwayNames("NH44","NH44 Express");
+System.out.println("The updation is " + isUpdated);
+state.getHighwayNames();
+
+System.out.println("--------------------------");
+boolean isDeleted = state.deleteHighwayNames("NH44");
+System.out.println("The deletion is " + isDeleted);
+state.getHighwayNames();
  }
 }

@@ -44,4 +44,42 @@ public int getIndexByHighwayNames(String name){
     }
     return 0;
 }
+
+public boolean updateHighwayNames(String existingName,String updatedName){
+    boolean isUpdated=false;
+    if(updatedName!=null && !updatedName.isEmpty()){
+        for(int index=0; index<highwayNames.length; index++){
+            if(highwayNames[index]==existingName){
+                highwayNames[index]=updatedName;
+                isUpdated=true;
+            }
+        }
+        if(!isUpdated){
+            System.out.println(existingName+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name for update");
+    }
+    return isUpdated;
+}
+
+public boolean deleteHighwayNames(String name){
+    boolean isDeleted=false;
+
+    if(name!=null && !name.isEmpty()){
+        for(int index=0; index<highwayNames.length; index++){
+            if(highwayNames[index]!=null && highwayNames[index]==name){
+                highwayNames[index]=null;
+                isDeleted=true;
+                break;
+            }
+        }
+        if(!isDeleted){
+            System.out.println(name+" is not found");
+        }
+    }else{
+        System.out.println("Provide valid name");
+    }
+    return isDeleted;
+}
 }

@@ -21,5 +21,15 @@ int result = government.getIndexByCompetitiveExamNames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = government.updateCompetitiveExamNames("UPSC","UPSC Civil Services");
+System.out.println("The updation is " + isUpdated);
+government.getCompetitiveExamNames();
+
+System.out.println("--------------------------");
+boolean isDeleted = government.deleteCompetitiveExamNames("UPSC");
+System.out.println("The deletion is " + isDeleted);
+government.getCompetitiveExamNames();
  }
 }

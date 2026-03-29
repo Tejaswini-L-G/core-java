@@ -34,5 +34,15 @@ int result = wonderla.getIndexByWaterGames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = wonderla.updateWaterGames("Wave Pool","Mega Wave Pool");
+System.out.println("The updation is " + isUpdated);
+wonderla.getWaterGames();
+
+System.out.println("--------------------------");
+boolean isDeleted = wonderla.deleteWaterGames("Wave Pool");
+System.out.println("The deletion is " + isDeleted);
+wonderla.getWaterGames();
  }
 }

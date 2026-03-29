@@ -38,5 +38,15 @@ int result = eCommerce.getIndexByProductNames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = eCommerce.updateProductNames("iPhone 14","iPhone 15");
+System.out.println("The updation is " + isUpdated);
+eCommerce.getProductNames();
+
+System.out.println("--------------------------");
+boolean isDeleted = eCommerce.deleteProductNames("iPhone 14");
+System.out.println("The deletion is " + isDeleted);
+eCommerce.getProductNames();
  }
 }

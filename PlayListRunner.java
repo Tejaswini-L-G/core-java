@@ -27,5 +27,15 @@ int result = playList.getIndexBySongNames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = playList.updateSongNames("Believer","Believer Remix");
+System.out.println("The updation is " + isUpdated);
+playList.getSongNames();
+
+System.out.println("--------------------------");
+boolean isDeleted = playList.deleteSongNames("Believer");
+System.out.println("The deletion is " + isDeleted);
+playList.getSongNames();
  }
 }

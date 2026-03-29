@@ -29,5 +29,14 @@ int result = universe.getIndexByGalaxies(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = universe.updateGalaxies("Milky Way","Milky Way Galaxy");
+System.out.println("The updation is " + isUpdated);
+universe.getGalaxies();
+System.out.println("--------------------------");
+boolean isDeleted = universe.deleteGalaxies("Milky Way");
+System.out.println("The deletion is " + isDeleted);
+universe.getGalaxies();
  }
 }

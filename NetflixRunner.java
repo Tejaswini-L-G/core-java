@@ -30,5 +30,15 @@ int result = netflix.getIndexByWebSeries(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = netflix.updateWebSeries("Dark","Dark S2");
+System.out.println("The updation is " + isUpdated);
+netflix.getWebSeries();
+
+System.out.println("--------------------------");
+boolean isDeleted = netflix.deleteWebSeries("Dark");
+System.out.println("The deletion is " + isDeleted);
+netflix.getWebSeries();
  }
 }

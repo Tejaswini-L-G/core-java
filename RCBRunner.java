@@ -26,5 +26,15 @@ int result = rcb.getIndexByPlayerNames(name);
 if(result != 0 ){
     System.out.println("The Position of " + name + " is " + result);
 }
+
+System.out.println("--------------------------");
+boolean isUpdated = rcb.updatePlayerNames("Virat Kohli","King Kohli");
+System.out.println("The updation is " + isUpdated);
+rcb.getPlayerNames();
+
+System.out.println("--------------------------");
+boolean isDeleted = rcb.deletePlayerNames("Virat Kohli");
+System.out.println("The deletion is " + isDeleted);
+rcb.getPlayerNames();
  }
 }
